@@ -8,8 +8,8 @@ module.exports = {
       resolve: `gatsby-plugin-sass`,
       options: {
         includePaths: [
-          "node_modules/modularscale-sass/stylesheets",
-          "node_modules/compass-sass-mixins/lib"],
+          "node_modules/modularscale-sass/stylesheets"
+        ]
       },
     },
     {
