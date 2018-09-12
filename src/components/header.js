@@ -1,13 +1,17 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import Headroom from 'react-headroom'
+
 const Header = ({ siteTitle }) => (
+  <Headroom>
   <div
     style={{
       background: 'rebeccapurple',
       marginBottom: '1.45rem',
     }}
   >
+  
     <div
       style={{
         margin: '0 auto',
@@ -28,6 +32,7 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
   </div>
+  </Headroom>
 )
 
 export default Header
