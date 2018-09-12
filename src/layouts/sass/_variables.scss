@@ -1,0 +1,26 @@
+/* SCSS Variables
+MPR Voters Series
+Nathan Lawrence, 2018 */
+
+// Fonts
+$serif: 'Georgia', 'Times New Roman', serif;
+$sans: 'San Francisco', 'Roboto', 'Helvetica Neue', 'Neue Helvetica', 'Arial', sans-serif;
+
+// Variables for Primary Color Theme
+$muted-orange: #DE6A42;
+$bold-salmon: #D8635B;
+$deep-sea-foam: #285864;
+$crisp-turquoise: #419384;
+$milky-honey: #F1BE52;
+
+$project-primary: $muted-orange;
+$project-primary-light: lighten($muted-orange, 20%);
+$project-secondary: $milky-honey;
+$project-contrast: $deep-sea-foam;
+$project-alert: $bold-salmon;
+
+$project-red: $bold-salmon;
+$project-orange: $muted-orange;
+$project-yellow: $milky-honey;
+$project-green: $crisp-turquoise;
+$project-blue: $deep-sea-foam;

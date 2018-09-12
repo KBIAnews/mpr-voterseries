@@ -4,12 +4,15 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "compass": "^0.1.1",
+    "compass-sass-mixins": "^0.12.7",
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
+    "modularscale-sass": "^3.0.5",
     "react-headroom": "^2.2.2",
     "react-helmet": "^5.2.0"
   },

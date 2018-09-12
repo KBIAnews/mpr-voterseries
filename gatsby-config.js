@@ -4,7 +4,14 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: [
+          "node_modules/modularscale-sass/stylesheets",
+          "node_modules/compass-sass-mixins/lib"],
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
