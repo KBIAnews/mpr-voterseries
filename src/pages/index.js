@@ -37,8 +37,24 @@ export const pageQuery = graphql`
                 }
             }
         }
+        bg:file(relativePath: { eq: "cow.jpg" }) {
+            childImageSharp {
+                sizes(maxWidth:400, maxHeight: 250) {
+                    ...GatsbyImageSharpSizes
+                }
+            }
+        }
     }
 
 `
 
 export default IndexPage
+/*
+file(relativePath: { eq: "images/cow.jpg" }) {
+            childImageSharp {
+                sizes(maxWidth:400, maxHeight: 250) {
+                    ...GatsbyImageSharpSizes
+                }
+            }
+        }
+*/
