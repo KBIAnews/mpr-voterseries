@@ -40,13 +40,19 @@ export default class FullBanner extends React.Component {
         return (
             <div
             style={{
-                height: this.state.targetDimensions.height,
-                width: this.state.targetDimensions.width
+                height: `${this.state.targetDimensions.height}px`,
+                width: `${this.state.targetDimensions.width}px`
             }}
             className={'full-banner'}>
                 <Img 
                 style={{
-                    bottom: '0px',
+                    flexShrink: 0,
+                    width: `${this.state.targetDimensions.width}px`,
+                    height: `${this.state.targetDimensions.height}px`
+                    // bottom: '0px',
+                }}
+                imgStyle={{
+                    objectFit: 'cover'
                 }}
                 sizes={this.props.gatsImage.sizes} 
                 className={"banner-image"}
