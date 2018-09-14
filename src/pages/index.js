@@ -1,17 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 
 import FullBanner from '../components/full-banner';
 
 const IndexPage = ({data}) => (
   <div>
-      <FullBanner gatsImage={data.bg.childImageSharp}/>
+      <Helmet 
+      title="Home - Beyond the Ballot"
+      />
+    <FullBanner gatsImage={data.bg.childImageSharp}/>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link>
     <h2>Index</h2>
-    <ul>
+    <ul
+    className={"post-index"}>
       {data.allMarkdownRemark.edges.map(
         post => (
           <li key={post.node.id}>
@@ -40,7 +45,7 @@ export const pageQuery = graphql`
                 }
             }
         }
-        bg:file(relativePath: { eq: "cow.jpg" }) {
+        bg:file(relativePath: { eq: "people.png" }) {
             childImageSharp {
                 sizes(maxWidth:3840, maxHeight: 2160) {
                     ...GatsbyImageSharpSizes
