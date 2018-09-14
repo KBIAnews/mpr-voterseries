@@ -1,12 +1,13 @@
 div.headroom {
     background: #444;
     margin-bottom: 1.45rem;
+    z-index: 1;
 
 
     // Containing div for header contents
     div.head-contain{
         margin: 0 auto;
-        max-width: 960;
+        max-width: 960px;
         padding: 1rem 1rem;
     }
 }

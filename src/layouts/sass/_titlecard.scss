@@ -1,0 +1,21 @@
+div.full-banner{
+    
+    div.glasspane {
+        
+    }
+    div.floating-copy{
+        z-index: 0.5;
+        position: absolute;
+        width: 100%;
+        top:80px;
+
+        font-family: $sans-serif;
+        color: $project-secondary;
+
+        h1 {
+            @include container(800px);
+            padding: 5px;
+            font-size: 3rem;
+        }
+    }
+}

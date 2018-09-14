@@ -4,7 +4,7 @@ Nathan Lawrence, 2018 */
 
 // Fonts
 $serif: 'Georgia', 'Times New Roman', serif;
-$sans: 'San Francisco', 'Roboto', 'Helvetica Neue', 'Neue Helvetica', 'Arial', sans-serif;
+$sans-serif: 'San Francisco', 'Roboto', 'Helvetica Neue', 'Neue Helvetica', 'Arial', sans-serif;
 
 // Variables for Primary Color Theme
 $muted-orange: #DE6A42;
@@ -24,3 +24,10 @@ $project-orange: $muted-orange;
 $project-yellow: $milky-honey;
 $project-green: $crisp-turquoise;
 $project-blue: $deep-sea-foam;
+
+
+// Breakpoints
+$breakpoint-landscape-phone: 600px;
+$breakpoint-tablet: 750px;
+$breakpoint-pc-medium: 900px;
+$breakpoint-pc-large: 1400px;

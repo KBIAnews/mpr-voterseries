@@ -1,8 +1,12 @@
 @import "normalize";
 @import "variables";
+
+
+@import "mixins";
 // @import "gatsby-preserved";
 
 @import "typography";
 
 // Individual Page Elements
 @import "header";
+@import "titlecard";
