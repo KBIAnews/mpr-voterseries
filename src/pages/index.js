@@ -1,9 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import FullBanner from '../components/full-banner';
+
 const IndexPage = ({data}) => (
   <div>
     <h1>Hi people</h1>
+    <FullBanner gatsImage={data.bg.childImageSharp}/>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link>
@@ -39,7 +42,7 @@ export const pageQuery = graphql`
         }
         bg:file(relativePath: { eq: "cow.jpg" }) {
             childImageSharp {
-                sizes(maxWidth:400, maxHeight: 250) {
+                sizes(maxWidth:3840, maxHeight: 2160) {
                     ...GatsbyImageSharpSizes
                 }
             }

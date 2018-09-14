@@ -1,15 +1,56 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 
 export default class FullBanner extends React.Component {
     constructor(props){
         super(props);
+
+        // ya gotta do what ya gotta do
+        // set state early so this won't break on initial compile
+        this.state = {
+            targetDimensions: {
+                width: '100',
+                height: '100'
+            }
+        };
+    }
+
+
+    componentDidMount(){
+        this.updateTargetDimensions();
+
+        window.addEventListener("resize", this.updateTargetDimensions.bind(this));
+    }
+
+    componentWillUnmount(){
+        window.removeEventListener("resize", this.updateTargetDimensions.bind(this));
+    }
+
+    updateTargetDimensions(){
+        this.setState({
+            targetDimensions: {
+                width: window.innerWidth,
+                height: window.innerHeight
+            }
+        });
     }
 
     render(){
         return (
-            <div>
-                
+            <div
+            style={{
+                height: this.state.targetDimensions.height,
+                width: this.state.targetDimensions.width
+            }}
+            className={'full-banner'}>
+                <Img 
+                style={{
+                    bottom: '0px',
+                }}
+                sizes={this.props.gatsImage.sizes} 
+                className={"banner-image"}
+                />
             </div>
         );
     }
