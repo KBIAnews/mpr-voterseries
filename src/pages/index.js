@@ -11,6 +11,16 @@ const IndexPage = ({data}) => (
       />
     <FullBanner gatsImage={data.bg.childImageSharp}/>
     <h1>Hi people</h1>
+    <h1>Hi people</h1>
+    <h1>Hi people</h1>
+    <h1>Hi people</h1>
+    <h1>Hi people</h1>
+    <h1>Hi people</h1>
+
+    <h1>Hi people</h1>
+    <h1>Hi people</h1>
+    <h1>Hi people</h1>
+    <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link>
@@ -45,7 +55,7 @@ export const pageQuery = graphql`
                 }
             }
         }
-        bg:file(relativePath: { eq: "people.png" }) {
+        bg:file(relativePath: { eq: "peoplediag-03.png" }) {
             childImageSharp {
                 sizes(maxWidth:3840, maxHeight: 2160) {
                     ...GatsbyImageSharpSizes
@@ -57,12 +67,3 @@ export const pageQuery = graphql`
 `
 
 export default IndexPage
-/*
-file(relativePath: { eq: "images/cow.jpg" }) {
-            childImageSharp {
-                sizes(maxWidth:400, maxHeight: 250) {
-                    ...GatsbyImageSharpSizes
-                }
-            }
-        }
-*/

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 
-import {debounce} from 'lodash';
+import {debounce, throttle} from 'lodash';
 
 export default class FullBanner extends React.Component {
     constructor(props){
@@ -18,18 +18,23 @@ export default class FullBanner extends React.Component {
             }
         };
     }
+
+
+    scrollPositionToStyleModifier(n){
+        return ((-1/((7*n)+1))+1);
+    }
     
     
     componentDidMount(){
         this.updateTargetDimensions();
         
         window.addEventListener("resize", debounce(this.updateTargetDimensions.bind(this)));
-        window.addEventListener("scroll", debounce(this.updateScrollFactor.bind(this)));
+        window.addEventListener("scroll", throttle(this.updateScrollFactor.bind(this),10));
     }
     
     componentWillUnmount(){
         window.removeEventListener("resize", debounce(this.updateTargetDimensions.bind(this)));
-        window.removeEventListener("scroll", debounce(this.updateScrollFactor.bind(this)));
+        window.removeEventListener("scroll", throttle(this.updateScrollFactor.bind(this),10));
     }
     
     updateTargetDimensions(){
@@ -65,12 +70,28 @@ export default class FullBanner extends React.Component {
                     width: '100%',
                     height: '100%',
                     transition: 'all 0.1s ease-in-out 0s',
-                    backgroundColor: `rgba(0,0,0,${(0.2)*(1-this.state.scrollFactor)})`
+                    backgroundColor: `rgba(0,0,0,${(0)*(this.scrollPositionToStyleModifier(this.state.scrollFactor))})`
                 }}
             
             ></div>
             <div className="floating-copy abs-words">
+            <div 
+            className="textcontent"
+            style={{
+                paddingTop: `${30 * this.state.scrollFactor}px`
+            }}>
+            <div className={"orange-bar"}>
             <h1>Beyond the Ballot</h1>
+            </div>
+            <div className="containable">
+            <div
+            className={"white-field"}>
+            <p>Listen to real Missouri voters as they tell you why they care about the issues.</p>
+            </div>
+            </div>
+
+                
+            </div>
             </div>
             <Img 
             style={{
@@ -83,7 +104,7 @@ export default class FullBanner extends React.Component {
             imgStyle={{
                 objectFit: 'cover',
                 transition: 'all 0.1s ease-in-out 0s',
-                filter: `blur(${5*(1-this.state.scrollFactor)}px)`
+                filter: `blur(${2*this.scrollPositionToStyleModifier(this.state.scrollFactor)}px)`
             }}
             sizes={this.props.gatsImage.sizes} 
             className={"banner-image"}

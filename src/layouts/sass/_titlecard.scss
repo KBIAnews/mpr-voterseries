@@ -8,14 +8,45 @@ div.full-banner{
         position: absolute;
         width: 100%;
         top:80px;
+        color: #fff;
+        text-align: left;
 
         font-family: $sans-serif;
-        color: $project-secondary;
+
+        div.orange-bar{
+            background-color: $project-primary;
+        }
+
+        div.containable{
+            @include container($breakpoint-pc-medium);
+        }
+
+        div.white-field{
+            font-family: $serif;
+
+            background-color: #fff;
+            width: 100%;
+            max-width: $breakpoint-landscape-phone;
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+
+            p {
+                padding-left: 20px;
+                padding-right: 20px;
+                font-weight: 400;
+                font-size: 2rem;
+                color: #000;
+            }
+        }
+
+
+
 
         h1 {
-            @include container(800px);
-            padding: 5px;
-            font-size: 3rem;
+            @include container($breakpoint-pc-medium);
+            padding: 10px;
+            font-size: 5rem;
         }
     }
 }
