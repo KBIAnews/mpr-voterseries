@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
@@ -40,42 +39,3 @@ export default  ({children}) => (
   
   />
 )
-
-// Layout.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
-
-// export default Layout
-
-// export const query = graphql`
-//   query SiteTitleQuery {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-//`
-
-
-// export default ({ children }) => (
-//   +   <StaticQuery
-//   +     query={graphql`
-//   +       query LayoutQuery {
-//   +         site {
-//   +           siteMetadata {
-//   +             title
-//   +           }
-//   +         }
-//   +       }
-//   +     `}
-//   +     render={data => (
-//   +       <>
-//   +         <Helmet titleTemplate={`%s | ${data.site.siteMetadata.title}`} defaultTitle={data.site.siteMetadata.title} />
-//   +         <div>
-//   +           {children}
-//   +         </div>
-//   +       </>
-//   +     )}
-//   +   />
-//   + )

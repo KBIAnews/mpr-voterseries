@@ -1,5 +1,4 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from 'react';  
 import Img from 'gatsby-image';
 
 import {debounce, throttle} from 'lodash';
