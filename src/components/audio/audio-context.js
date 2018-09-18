@@ -1,42 +1,22 @@
 import React from 'react';
 
-
-const defaultContextValue = {
-    data: {
-        // set your initial data shape here
-        testText: 'moose'
-    },
-    set: () => {},
+const defaultAudioContext = {
+    testText: 'moose'
 }
 
-const {Provider, AudioContextConsumer} = React.createContext(defaultContextValue);
+const AudioContext = React.createContext(defaultAudioContext);
+
+const AudioContextConsumer = AudioContext.Consumer
 
 class AudioContextProvider extends React.Component {
-    constructor() {
-        super()
-        
-        this.setData = this.setData.bind(this)
-        this.state = {
-            ...defaultContextValue,
-            set: this.setData,
-        }
-    }
-    
-    setData(newData) {
-        this.setState(state => ({
-            data: {
-                ...state.data,
-                ...newData,
-            },
-        }))
-    }
-    
-    render() {
+
+    render () {
         return (
-            <Provider value={this.state}>{this.props.children}</Provider>
-            )
-        }
+            <AudioContext.Provider value={defaultAudioContext}>
+                {this.props.children}
+            </AudioContext.Provider>
+        )
     }
-    
-    export { AudioContextConsumer as default, AudioContextProvider }
-    
+}
+
+export {AudioContextConsumer, AudioContextProvider}

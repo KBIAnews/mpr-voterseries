@@ -2,6 +2,8 @@ import React from 'react'
 
 import Headroom from 'react-headroom'
 
+import {AudioContextConsumer} from './audio/audio-context'
+
 class Header extends React.Component {
   
   
@@ -11,7 +13,13 @@ class Header extends React.Component {
         <div
         className={'head-contain'}
         >
-        
+        <AudioContextConsumer>
+          {(context) => (
+            <p>
+              {typeof context}
+            </p>
+          )}
+        </AudioContextConsumer>
         </div>
       </Headroom>
       );
