@@ -28,6 +28,16 @@ module.exports = {
         name: 'images'
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-24704798-11",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        // exclude: ["/preview/**", "/do-not-track/me/too/"],
+      }},
     'gatsby-image',
     'gatsby-transformer-remark'
   ],
