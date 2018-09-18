@@ -5,9 +5,22 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import './index.scss'
+import { StaticQuery } from 'gatsby';
 
-const Layout = ({ children, data }) => (
-  <div>
+
+export default  ({children}) => (
+  <StaticQuery 
+    query={graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `}
+  render={data => (
+    <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -19,24 +32,50 @@ const Layout = ({ children, data }) => (
     <div
       className={'injected-page-content'}
     >
-      {children()}
+      {children}
     </div>
     <Footer />
   </div>
+  )}
+  
+  />
 )
 
-Layout.propTypes = {
-  children: PropTypes.func,
-}
+// Layout.propTypes = {
+//   children: PropTypes.node.isRequired,
+// }
 
-export default Layout
+// export default Layout
 
-export const query = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query SiteTitleQuery {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//   }
+//`
+
+
+// export default ({ children }) => (
+//   +   <StaticQuery
+//   +     query={graphql`
+//   +       query LayoutQuery {
+//   +         site {
+//   +           siteMetadata {
+//   +             title
+//   +           }
+//   +         }
+//   +       }
+//   +     `}
+//   +     render={data => (
+//   +       <>
+//   +         <Helmet titleTemplate={`%s | ${data.site.siteMetadata.title}`} defaultTitle={data.site.siteMetadata.title} />
+//   +         <div>
+//   +           {children}
+//   +         </div>
+//   +       </>
+//   +     )}
+//   +   />
+//   + )
