@@ -29,14 +29,19 @@ export default class FullBanner extends React.Component {
     
     componentDidMount(){
         this.updateTargetDimensions();
+
+        this.setState({
+            mountedResizeListenerFunction: debounce(this.updateTargetDimensions.bind(this)),
+            mountedScrollListenerFunction: throttle(this.updateScrollFactor.bind(this),10)
+        })
         
-        window.addEventListener("resize", debounce(this.updateTargetDimensions.bind(this)));
-        window.addEventListener("scroll", throttle(this.updateScrollFactor.bind(this),10));
+        window.addEventListener("resize", this.mountedResizeListenerFunction);
+        window.addEventListener("scroll", this.mountedScrollListenerFunction);
     }
     
     componentWillUnmount(){
-        window.removeEventListener("resize", debounce(this.updateTargetDimensions.bind(this)));
-        window.removeEventListener("scroll", throttle(this.updateScrollFactor.bind(this),10));
+        window.removeEventListener("resize", this.mountedResizeListenerFunction);
+        window.removeEventListener("scroll", this.mountedScrollListenerFunction);
     }
     
     updateTargetDimensions(){
