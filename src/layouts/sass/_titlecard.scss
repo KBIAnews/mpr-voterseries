@@ -4,7 +4,7 @@ div.full-banner{
         
     }
     div.floating-copy{
-        z-index: 0.5;
+        z-index: 1;
         position: absolute;
         width: 100%;
         top:80px;
@@ -32,10 +32,11 @@ div.full-banner{
             padding-bottom: 5px;
 
             p {
+                margin-top: 1rem;
                 padding-left: 20px;
                 padding-right: 20px;
                 font-weight: 400;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 color: #000;
             }
         }

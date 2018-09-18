@@ -3,6 +3,8 @@ import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 
 import {debounce, throttle} from 'lodash';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeadphones } from '@fortawesome/free-solid-svg-icons';
 
 export default class FullBanner extends React.Component {
     constructor(props){
@@ -13,8 +15,8 @@ export default class FullBanner extends React.Component {
         this.state = {
             scrollFactor: 0, // How much of a windowHeight a person has scrolled down
             targetDimensions: {
-                width: '100',
-                height: '100'
+                width: '2000',
+                height: '1000'
             }
         };
     }
@@ -87,6 +89,21 @@ export default class FullBanner extends React.Component {
             <div
             className={"white-field"}>
             <p>Listen to real Missouri voters as they tell you why they care about the issues.</p>
+            
+            
+            <p className={"button-row"}>
+
+            <button
+            className={'primary'}>
+                <FontAwesomeIcon icon={faHeadphones} 
+                style={{
+                    marginRight: '0.5rem'
+                }}/> 
+                Start Listening
+            </button>
+            </p>
+
+
             </div>
             </div>
 
