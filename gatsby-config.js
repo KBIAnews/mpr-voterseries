@@ -4,7 +4,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-layout',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -40,6 +39,9 @@ module.exports = {
         // exclude: ["/preview/**", "/do-not-track/me/too/"],
       }},
     'gatsby-image',
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-plugin-layout'
+    }
   ],
 }

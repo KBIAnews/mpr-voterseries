@@ -5,6 +5,9 @@ import {debounce, throttle} from 'lodash';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeadphones } from '@fortawesome/free-solid-svg-icons';
 
+// Context Consumers
+import {AudioContextConsumer} from './audio/audio-context'
+
 export default class FullBanner extends React.Component {
     constructor(props){
         super(props);
@@ -96,15 +99,21 @@ export default class FullBanner extends React.Component {
             
             
             <p className={"button-row"}>
+            
+            <AudioContextConsumer>
+                {(context) => (
+                    <button
+                    className={'primary'}
+                    onClick={context.logButtonClicked}>
+                        <FontAwesomeIcon icon={faHeadphones} 
+                        style={{
+                            marginRight: '0.5rem'
+                        }}/> 
+                        Start Listening
+                    </button>
+                )}
+            </AudioContextConsumer>
 
-            <button
-            className={'primary'}>
-                <FontAwesomeIcon icon={faHeadphones} 
-                style={{
-                    marginRight: '0.5rem'
-                }}/> 
-                Start Listening
-            </button>
             </p>
 
 

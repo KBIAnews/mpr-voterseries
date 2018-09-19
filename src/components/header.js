@@ -9,15 +9,23 @@ class Header extends React.Component {
   
   render(){
     return (
-      <Headroom>
+      <Headroom
+        style={{
+          color: '#fff'
+        }}>
         <div
         className={'head-contain'}
         >
         <AudioContextConsumer>
           {(context) => (
+            <React.Fragment>
             <p>
-              {typeof context}
+              {context.state.testText}
             </p>
+            <p>
+              The button has been clicked {context.state.buttonClickedCount} times.
+            </p>
+            </React.Fragment>
           )}
         </AudioContextConsumer>
         </div>
