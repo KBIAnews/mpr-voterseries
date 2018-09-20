@@ -3,8 +3,19 @@ MPR Voters Series
 Nathan Lawrence, 2018 */
 
 // Fonts
+@import url("https://use.typekit.net/nqy5iuk.css"); // Typekit "kit" for project: 
 $serif: 'Georgia', 'Times New Roman', serif;
-$sans-serif: 'Helvetica Neue', 'Neue Helvetica', 'Arial', sans-serif;
+$sans-serif: 'neue-haas-grotesk-display','Helvetica Neue', 'Neue Helvetica', 'Arial', sans-serif;
+
+// Typography variables
+$body-line-height: 1.4em;
+$header-font-family: $sans-serif;
+$body-font-family: $serif;
+
+$base-font-size: 18px;
+$font-size-multiplier: 1.5;
+$article-container-width: 960px;
+
 
 // Variables for Primary Color Theme
 $muted-orange: #DE6A42;
@@ -12,6 +23,8 @@ $bold-salmon: #D8635B;
 $deep-sea-foam: #285864;
 $crisp-turquoise: #419384;
 $milky-honey: #F1BE52;
+
+$black: #333;
 
 $project-primary: $bold-salmon; //$muted-orange
 $project-primary-light: lighten($project-primary, 20%);

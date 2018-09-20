@@ -3,6 +3,7 @@ div.headroom {
     margin-bottom: 1.45rem;
     z-index: 2 !important;
     border-top: 5px solid $project-primary;
+    
 
 
     // Containing div for header contents
@@ -10,5 +11,9 @@ div.headroom {
         margin: 0 auto;
         max-width: 960px;
         padding: 1rem 1rem;
+
+        p{
+            color: #fff;
+        }
     }
 }

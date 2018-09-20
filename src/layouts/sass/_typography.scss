@@ -1,0 +1,28 @@
+// Typography Styling
+
+// Procedural Font Size Calculation
+$body-font-size: $base-font-size;
+$h3-font-size: $body-font-size*$font-size-multiplier;
+$h2-font-size: $h3-font-size*$font-size-multiplier;
+$h1-font-size: $h2-font-size*$font-size-multiplier;
+
+h1 {
+    font-size: $h1-font-size;
+}
+h2 {
+    font-size: $h2-font-size;
+}
+p {
+    font-size: $body-font-size;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $header-font-family;
+    color: $black;
+}
+p {
+    font-family: $body-font-family;
+    line-height: 1.3em;
+    color: $black;
+}

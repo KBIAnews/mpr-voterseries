@@ -20,9 +20,6 @@ class Header extends React.Component {
           {(context) => (
             <React.Fragment>
             <p>
-              {context.state.testText}
-            </p>
-            <p>
               The button has been clicked {context.state.buttonClickedCount} times.
             </p>
             </React.Fragment>
