@@ -9,8 +9,32 @@ export default function Template({data}){
       <Helmet 
       title={`${post.frontmatter.title} - Beyond the Banner`}
       />
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{__html:post.html}}/>
+      <header>
+        <h1>{post.frontmatter.title}</h1>
+        <p className="credit">
+        {
+          post.frontmatter.author && (
+            <React.Fragment>
+              by {post.frontmatter.author}{
+                post.frontmatter.station && (
+                  <React.Fragment>
+                    , {post.frontmatter.station}&nbsp;
+                  </React.Fragment>
+                )
+              }
+            </React.Fragment>
+          )
+        }
+        {
+          post.frontmatter.editor && (
+            <React.Fragment>
+              |&nbsp;Edited by {post.frontmatter.editor}
+            </React.Fragment>
+          )
+        }
+        </p>
+      </header>
+      <section dangerouslySetInnerHTML={{__html:post.html}}/>
     </article>
   )
 }
@@ -22,6 +46,9 @@ export const postQuery = graphql`
           frontmatter {
               path
               title
+              author
+              station
+              editor
           }
       }
   }
