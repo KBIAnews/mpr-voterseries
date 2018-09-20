@@ -13,8 +13,8 @@ $deep-sea-foam: #285864;
 $crisp-turquoise: #419384;
 $milky-honey: #F1BE52;
 
-$project-primary: $muted-orange;
-$project-primary-light: lighten($muted-orange, 20%);
+$project-primary: $bold-salmon; //$muted-orange
+$project-primary-light: lighten($project-primary, 20%);
 $project-secondary: $milky-honey;
 $project-contrast: $deep-sea-foam;
 $project-alert: $bold-salmon;

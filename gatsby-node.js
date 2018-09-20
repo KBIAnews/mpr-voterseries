@@ -15,6 +15,7 @@ exports.createPages = ({ actions, graphql }) => {
     allMarkdownRemark {
       edges {
         node {
+          fileAbsolutePath
           html
           id
           frontmatter {
@@ -32,6 +33,7 @@ exports.createPages = ({ actions, graphql }) => {
       ({node}) => {
         createPage({
           path: node.frontmatter.path,
+          enclosingDirectory: node.fileAbsolutePath.split("\/").reverse()[1],
           component: postTemplate
         })
       }

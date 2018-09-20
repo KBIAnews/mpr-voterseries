@@ -41,6 +41,12 @@ module.exports = {
     'gatsby-image',
     'gatsby-transformer-remark',
     {
+      resolve: 'gatsby-remark-images',
+      options: {
+        maxWidth: 3840,
+      }
+    },
+    {
       resolve: 'gatsby-plugin-layout'
     }
   ],
