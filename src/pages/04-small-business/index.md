@@ -13,6 +13,8 @@ Less than two miles from the iconic Anheuser-Busch brewery in St. Louis, a start
 
 The modern micro-brewery has grown steadily since it was launched four years ago. Stuart Keating, a co-owner, said financing from a local development agency has been a big help, but he's feeling the pinch from policies in Washington. President Donald Trump’s tariffs on imported metals have raised the price of a beer can by as much as three cents.
 
+![Person making beer](./091818_CH_earthboundbeer_01_03.jpg)
+
 “We’re the small guys so we’re going to get the price increases passed on to us,” he said. “That is one of the interesting things, if you don’t have any real purchasing power, you’re at the absolute mercy of all price increases.”
 
 In fact, the “small guys” are often called the growth engine of the U.S. economy. Small businesses employ nearly half of the private workforce and equal 99 percent of all businesses in Missouri and across the nation. Despite those numbers, it’s difficult for such a large and diverse sector to speak with one voice.

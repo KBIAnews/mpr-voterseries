@@ -1,0 +1,32 @@
+div.post-index-container{
+    @include container(960px);
+
+    ul.post-index {
+        // @include container($breakpoint-tablet);
+        
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+        list-style: none;
+        display: block;
+
+        li {
+            a {
+                display:block;
+                border-radius: 5px;
+                border: 2px solid $project-primary;
+                padding: 10px;
+
+                background-color: $project-primary;
+                color: $white;
+                text-decoration: none;
+
+                h3 {
+                    text-decoration: none;
+                    color: $white;
+                    font-size: $h3-font-size;
+                }
+            }
+        }
+    }
+}

@@ -41,11 +41,17 @@ module.exports = {
         // exclude: ["/preview/**", "/do-not-track/me/too/"],
       }},
     'gatsby-image',
-    'gatsby-transformer-remark',
     {
-      resolve: 'gatsby-remark-images',
+      resolve: 'gatsby-transformer-remark',
       options: {
-        maxWidth: 3840,
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 3840,
+            }
+          }
+        ]
       }
     },
     {

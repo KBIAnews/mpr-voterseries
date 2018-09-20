@@ -11,21 +11,8 @@ const IndexPage = ({data}) => (
       title="Home - Beyond the Ballot"
       />
     <FullBanner gatsImage={data.bg.childImageSharp}/>
-    <h1>Hi people</h1>
-    <h1>Hi people</h1>
-    <h1>Hi people</h1>
-    <h1>Hi people</h1>
-    <h1>Hi people</h1>
-    <h1>Hi people</h1>
-
-    <h1>Hi people</h1>
-    <h1>Hi people</h1>
-    <h1>Hi people</h1>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-    <h2>Index</h2>
+    <div className="post-index-container">
+    <h2>Explore All Stories</h2>
     <ul
     className={"post-index"}>
       {data.allMarkdownRemark.edges.map(
@@ -33,12 +20,13 @@ const IndexPage = ({data}) => (
           <li key={post.node.id}>
             <Link
               to={post.node.frontmatter.path}>
-              {post.node.frontmatter.title}
+              <h3>{post.node.frontmatter.title}</h3>
               </Link>
           </li>
         )
       )}
     </ul>
+    </div>
   </div>
 )
 
@@ -56,7 +44,7 @@ export const pageQuery = graphql`
                 }
             }
         }
-        bg:file(relativePath: { eq: "peoplediag-03.png" }) {
+        bg:file(relativePath: { eq: "pattern2.png" }) {
             childImageSharp {
                 sizes(maxWidth:3840, maxHeight: 2160) {
                     ...GatsbyImageSharpSizes

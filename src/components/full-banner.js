@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 
 import {debounce} from 'lodash';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeadphones } from '@fortawesome/free-solid-svg-icons';
+import { faHeadphones,faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
 // Context Consumers
 import {AudioContextConsumer} from './audio/audio-context'
@@ -115,6 +115,15 @@ export default class FullBanner extends React.Component {
                     </button>
                 )}
             </AudioContextConsumer>
+            <button
+                    className={'primary'}
+                    >
+                        <FontAwesomeIcon icon={faNewspaper} 
+                        style={{
+                            marginRight: '0.5rem'
+                        }}/> 
+                        Read Stories
+                    </button>
 
             </p>
 
