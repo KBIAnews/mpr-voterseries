@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Beyond the Ballot',
+    siteUrl: 'https://apps.kbia.fm/beyond-the-ballot/',
+    description: 'Find out what real voters are looking for in the November midterm election.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -48,6 +50,9 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-layout'
+    },
+    {
+      resolve: 'gatsby-plugin-feed'
     }
   ],
 }

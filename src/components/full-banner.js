@@ -1,7 +1,7 @@
 import React from 'react';  
 import Img from 'gatsby-image';
 
-import {debounce, throttle} from 'lodash';
+import {debounce} from 'lodash';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeadphones } from '@fortawesome/free-solid-svg-icons';
 
@@ -33,8 +33,8 @@ export default class FullBanner extends React.Component {
         this.updateTargetDimensions();
 
         this.setState({
-            mountedResizeListenerFunction: debounce(this.updateTargetDimensions.bind(this)),
-            mountedScrollListenerFunction: throttle(this.updateScrollFactor.bind(this),10)
+            mountedResizeListenerFunction: debounce(this.updateTargetDimensions.bind(this),100),
+            mountedScrollListenerFunction: debounce(this.updateScrollFactor.bind(this),100)
         })
         
         window.addEventListener("resize", this.mountedResizeListenerFunction);
@@ -47,6 +47,7 @@ export default class FullBanner extends React.Component {
     }
     
     updateTargetDimensions(){
+        console.log("update target dimensions");
         this.setState({
             scrollFactor: (window.scrollY/window.innerHeight),
             targetDimensions: {
@@ -57,6 +58,7 @@ export default class FullBanner extends React.Component {
     }
 
     updateScrollFactor(){
+        console.log("update scroll factor");
         this.setState({
             scrollFactor: (window.scrollY/window.innerHeight)
         });

@@ -4,6 +4,7 @@ title: 'Missouri’s Small Businesses Have Big Wish Lists For Midterms'
 author: 'Melody Walker'
 editor: 'Maria Altman'
 station: 'St. Louis Public Radio'
+date: "2018-09-19T22:12:03.284Z"
 ---
 
 Less than two miles from the iconic Anheuser-Busch brewery in St. Louis, a startup with 11 employees is brewing small batches of beers with names like Dead Druid King (made with oak leaves instead of hops), Cucumber Pepper Kolsch and Ozark Common.

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'gatsby-link'
 import Headroom from 'react-headroom'
 
 import {AudioContextConsumer} from './audio/audio-context'
@@ -16,12 +16,15 @@ class Header extends React.Component {
         <div
         className={'head-contain'}
         >
+        <div className="site-title">
+        <Link to="/">Beyond the Ballot</Link>
+        </div>
         <AudioContextConsumer>
           {(context) => (
             <React.Fragment>
-            <p>
+            {/* <p>
               The button has been clicked {context.state.buttonClickedCount} times.
-            </p>
+            </p> */}
             </React.Fragment>
           )}
         </AudioContextConsumer>
