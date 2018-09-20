@@ -1,6 +1,17 @@
 article{
     @include container(960px);
 
+    header {
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        .credit {
+            font-family: $sans-serif;
+            font-weight: 400;
+        }
+    }
+
     p{
         max-width: 750px;
 
