@@ -13,7 +13,7 @@ exports.createPages = ({ actions, graphql }) => {
   const {createPage} = actions;
   const postTemplate = path.resolve('src/templates/post.js');
   return graphql(`{
-    allMarkdownRemark {
+    allMarkdownRemark (sort: { fields: [frontmatter___path], order: ASC }){
       edges {
         node {
           fileAbsolutePath
