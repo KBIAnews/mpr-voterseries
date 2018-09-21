@@ -10,6 +10,12 @@ article{
             font-family: $sans-serif;
             font-weight: 400;
         }
+
+        p:last-of-type{
+            &:after{
+                content: "";
+            }
+        }
     }
 
     p{
@@ -21,6 +27,24 @@ article{
 
             &:hover {
                 text-decoration: underline;
+            }
+        }
+
+        &:first-child:first-letter{
+            $drop-cap-size: $body-font-size*4;
+            padding-bottom: 10px;
+            font-size: $drop-cap-size;
+            padding-top: $drop-cap-size/5;
+            padding-right: 3px;
+            float:left;
+        }
+
+        &:last-of-type{
+            &:after {
+                // This would be where a little boxy doodle would appear
+                // content: " \25D8";
+                // font-size: $body-font-size;
+                // color: $project-primary*1.2;
             }
         }
     }

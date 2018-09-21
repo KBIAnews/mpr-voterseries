@@ -1,6 +1,6 @@
 div.post-index-container{
     @include container(960px);
-
+    
     ul.post-index {
         // @include container($breakpoint-tablet);
         display: flex;
@@ -8,19 +8,18 @@ div.post-index-container{
         
         margin-top: 15px;
         margin-bottom: 20px;
-
+        
         list-style: none;
-        display: block;
-
+        
         li {
             display: flex;
             padding: 1rem;
             @media(min-width: 40rem) {
                 width: 50%;
-              }
-              @media(min-width: 56rem) {
+            }
+            @media(min-width: 56rem) {
                 width: 33.3333%;
-              }
+            }
             a {
                 border-radius: 0.25rem;
                 box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
@@ -29,27 +28,65 @@ div.post-index-container{
                 overflow: hidden;
                 transition: all 0.2s ease-in;
                 &:hover {
-
+                    
                     box-shadow: 10px 30px 40px -14px rgba(0,0,0,0.25);
-
-                  img {
-                    filter: contrast(100%);
-                  }
+                    
+                    .card-img {
+                        filter: contrast(80%);
+                    }  
                 }
                 border-radius: 5px;
-                border: 2px solid $project-primary;
-                padding: 10px;
 
+                padding: 0px 0px 0px 0px;
+                
                 background-color: $project-primary;
                 color: $white;
                 text-decoration: none;
-
+                
                 h3 {
                     text-decoration: none;
                     color: $white;
-                    font-size: $h3-font-size;
+                    font-size: $h3-font-size*0.9;
+                    padding: 0px 10px 0px 10px;
+                    margin-bottom: 0px;
+                    margin-top: 0.5em;
+                }
+
+                p.credit {
+                    margin-top: 0.5em;
+                    font-size: $body-font-size/$font-size-multiplier;
+                    font-family: $sans-serif;
+                    color: darken($white, 10%);
+                    padding: 0px 10px 0px 10px;
+                }
+                .card-img {
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-top-left-radius: 0.25rem;
+                    border-top-right-radius: 0.25rem;
+                    filter: contrast(70%);
+                    //filter: saturate(180%);
+                    overflow: hidden;
+                    position: relative;
+                    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+                    &::before {
+                        content: "";
+                        display: block;
+                        padding-top: 56.25%; // 16:9 aspect ratio
+                    }
+                    @media(min-width: 40rem) {
+                        &::before {
+                            padding-top: 66.6%; // 3:2 aspect ratio
+                        }
+                    }
                 }
             }
+        }
+        
+        @media screen and (max-width: $breakpoint-landscape-phone){
+            display: block;
+            
         }
     }
 }

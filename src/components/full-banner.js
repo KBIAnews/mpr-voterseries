@@ -145,7 +145,7 @@ export default class FullBanner extends React.Component {
             imgStyle={{
                 objectFit: 'cover',
                 transition: 'all 0.1s ease-in-out 0s',
-                filter: `blur(${2*this.scrollPositionToStyleModifier(this.state.scrollFactor)}px)`
+                // filter: `blur(${2*this.scrollPositionToStyleModifier(this.state.scrollFactor)}px)`
             }}
             sizes={this.props.gatsImage.sizes} 
             className={"banner-image"}

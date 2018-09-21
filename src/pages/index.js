@@ -20,7 +20,12 @@ const IndexPage = ({data}) => (
           <li key={post.node.id}>
             <Link
               to={post.node.frontmatter.path}>
+                <div className="card-img"
+                style={{
+                    backgroundImage: `url(${post.node.frontmatter.repimg})`
+                }}></div>
               <h3>{post.node.frontmatter.title}</h3>
+              <p className="credit">{post.node.frontmatter.author}&nbsp;|&nbsp;{post.node.frontmatter.station}</p>
               </Link>
           </li>
         )
@@ -40,6 +45,9 @@ export const pageQuery = graphql`
                     frontmatter {
                         path
                         title
+                        repimg
+                        author
+                        station
                     }
                 }
             }
