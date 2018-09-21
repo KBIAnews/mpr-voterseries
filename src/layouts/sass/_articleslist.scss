@@ -3,6 +3,8 @@ div.post-index-container{
 
     ul.post-index {
         // @include container($breakpoint-tablet);
+        display: flex;
+        padding-inline-start: 0px;
         
         margin-top: 15px;
         margin-bottom: 20px;
@@ -11,8 +13,29 @@ div.post-index-container{
         display: block;
 
         li {
+            display: flex;
+            padding: 1rem;
+            @media(min-width: 40rem) {
+                width: 50%;
+              }
+              @media(min-width: 56rem) {
+                width: 33.3333%;
+              }
             a {
-                display:block;
+                border-radius: 0.25rem;
+                box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                transition: all 0.2s ease-in;
+                &:hover {
+
+                    box-shadow: 10px 30px 40px -14px rgba(0,0,0,0.25);
+
+                  img {
+                    filter: contrast(100%);
+                  }
+                }
                 border-radius: 5px;
                 border: 2px solid $project-primary;
                 padding: 10px;

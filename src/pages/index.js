@@ -12,7 +12,7 @@ const IndexPage = ({data}) => (
       />
     <FullBanner gatsImage={data.bg.childImageSharp}/>
     <div className="post-index-container">
-    <h2>Explore All Stories</h2>
+    {/* <h2>Explore All Stories</h2> */}
     <ul
     className={"post-index"}>
       {data.allMarkdownRemark.edges.map(
@@ -44,7 +44,7 @@ export const pageQuery = graphql`
                 }
             }
         }
-        bg:file(relativePath: { eq: "pattern2.png" }) {
+        bg:file(relativePath: { eq: "pattern.png" }) {
             childImageSharp {
                 sizes(maxWidth:3840, maxHeight: 2160) {
                     ...GatsbyImageSharpSizes

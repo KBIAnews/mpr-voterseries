@@ -1,5 +1,10 @@
 // Typography Styling
 
+
+body {
+    background-color: $white;
+}
+
 // Procedural Font Size Calculation
 $body-font-size: $base-font-size;
 $h4-font-size: $body-font-size*$font-size-multiplier;

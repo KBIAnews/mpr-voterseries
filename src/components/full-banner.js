@@ -97,7 +97,7 @@ export default class FullBanner extends React.Component {
             <div className="containable">
             <div
             className={"white-field"}>
-            <p>Find out what real voters are looking for in the November midterm election.</p>
+            <p>Find out what Missouri's real voters are looking for in the November midterm election.</p>
             
             
             <p className={"button-row"}>

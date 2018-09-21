@@ -19,7 +19,7 @@ button {
     }
     &:hover{
         background-color: $project-primary;
-        color: #fff;
+        color: $white;
         transform: scale(1.03);
         box-shadow: 5px 5px 15px 10px rgba(0,0,0,0.05);
     }
