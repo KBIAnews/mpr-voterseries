@@ -1,6 +1,6 @@
 ---
-path: '/01-young-voters'
-title: 'Missouri High Schoolers Either Politically Plugged In... Or Checked Out'
+path: '/01-motivated-activism'
+title: 'Activism Activism Activism Activism'
 author: 'Aviva Okeson-Haberman'
 editor: 'Janet Saidi'
 station: 'KBIA'

@@ -17,7 +17,8 @@ class AudioContextProvider extends React.Component {
 
         this.state = {
             testText: "moose",
-            buttonClickedCount: 0
+            buttonClickedCount: 0,
+            audioPlaybackMenuShouldShow: false
         }
     }
 
@@ -27,11 +28,35 @@ class AudioContextProvider extends React.Component {
         })
     }
 
+    requestAudioPlaybackMenu(){
+        this.setState({
+            audioPlaybackMenuShouldShow: true
+        });
+    }  
+    
+    requestCloseAudioPlaybackMenu(){
+        this.setState({
+            audioPlaybackMenuShouldShow: false
+        });
+    }
+
+    demandStopAudioPlayback(){
+
+    }
+
+    requestStopAudioPlayback(){
+        this.demandStopAudioPlayback();
+    }
+
     render () {
         return (
             <AudioContext.Provider value={{
                 state: this.state,
-                logButtonClicked: this.logButtonClicked.bind(this)
+                logButtonClicked: this.logButtonClicked.bind(this),
+                requestAudioPlaybackMenu: this.requestAudioPlaybackMenu.bind(this),
+                requestCloseAudioPlaybackMenu: this.requestCloseAudioPlaybackMenu.bind(this),
+                requestStopAudioPlayback: this.requestStopAudioPlayback.bind(this),
+                demandStopAudioPlayback: this.demandStopAudioPlayback.bind(this)
             }}>
                 {this.props.children}
             </AudioContext.Provider>

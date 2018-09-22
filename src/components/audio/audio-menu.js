@@ -1,14 +1,17 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-export default class AudioControlsComponent extends React.Component {
+// Context Consumers
+import {AudioContextConsumer} from './audio/audio-context'
+
+export default class AudioPlaybackMenuComponent extends React.Component {
     constructor(props){
         super(props);
     }
-    
+
     render(){
         return (
-            <div className={'audio-controls'}>
+            <div className={'audio-playback-menu'}>
                 <AudioContextConsumer>
                 {(context) => (
                     <button
@@ -18,7 +21,7 @@ export default class AudioControlsComponent extends React.Component {
                     </button>
                 )}
                 </AudioContextConsumer>
-                </div>
-                );
-            }
-        }
+            </div>
+        );
+    }
+}
