@@ -6,6 +6,7 @@ editor: 'Maria Altman'
 station: 'St. Louis Public Radio'
 date: "2018-09-19T22:12:03.284Z"
 repimg: "https://s3.amazonaws.com/media.kbia.org/2018/beyond-ballot-media/smb-thumb.jpg"
+audio: "https://s3.amazonaws.com/media.kbia.org/2018/beyond-ballot-media/SmallBiz_Feature.mp3"
 ---
 
 Less than two miles from the iconic Anheuser-Busch brewery in St. Louis, a startup with 11 employees is brewing small batches of beers with names like Dead Druid King (made with oak leaves instead of hops), Cucumber Pepper Kolsch and Ozark Common.

@@ -1,13 +1,12 @@
 import React from 'react';
-import Link from 'gatsby-link';
 
 // Context Consumers
-import {AudioContextConsumer} from './audio/audio-context'
+import {AudioContextConsumer} from './audio-context'
 
 export default class AudioPlaybackMenuComponent extends React.Component {
-    constructor(props){
-        super(props);
-    }
+    // constructor(props){
+    //     super(props);
+    // }
 
     render(){
         return (

@@ -29,6 +29,7 @@
     "react-dom": "^16.5.2",
     "react-headroom": "^2.2.2",
     "react-helmet": "^5.2.0",
+    "react-responsive-audio-player": "^1.4.0",
     "webpack": "^4.19.1"
   },
   "keywords": [

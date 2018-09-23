@@ -2,6 +2,9 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby'
 
+// Responsive Audio Player
+import AudioPlayer from 'react-responsive-audio-player';
+
 export default function Template({data}){
   const {markdownRemark: post} = data;
   return (
@@ -33,6 +36,14 @@ export default function Template({data}){
           )
         }
         </p>
+        <AudioPlayer 
+        playlist={[
+          {
+            url: post.frontmatter.audio,
+            title: post.frontmatter.title
+          }
+        ]}
+        />
       </header>
       <section dangerouslySetInnerHTML={{__html:post.html}}/>
     </article>
@@ -49,6 +60,7 @@ export const postQuery = graphql`
               author
               station
               editor
+              audio
           }
       }
   }

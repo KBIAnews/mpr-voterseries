@@ -10,7 +10,8 @@ const IndexPage = ({data}) => (
       <Helmet 
       title="Home - Beyond the Ballot"
       />
-    <FullBanner gatsImage={data.bg.childImageSharp}/>
+    <FullBanner gatsImage={data.bg.childImageSharp}
+                stories={data.allMarkdownRemark.edges}/>
     <div className="post-index-container">
     {/* <h2>Explore All Stories</h2> */}
     <ul

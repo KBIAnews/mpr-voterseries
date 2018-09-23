@@ -1,23 +1,33 @@
 import React from 'react';
-import Link from 'gatsby-link';
+
+// Context Consumers
+import {AudioContextConsumer} from './audio-context'
+
+// Components
+import AudioPlaybackMenuComponent from './audio-menu'
 
 export default class AudioControlsComponent extends React.Component {
-    constructor(props){
-        super(props);
-    }
+    // constructor(props){
+    //     super(props);
+    // }
     
     render(){
         return (
-            <div className={'audio-controls'}>
+            <div className={'audio-controls'}
+            style={{
+                float: 'right'
+            }}>
+                
                 <AudioContextConsumer>
                 {(context) => (
-                    <button
-                    className={'primary'}
-                    onClick={context.requestCloseAudioPlaybackMenu}>
-                    Close
-                    </button>
+                    <React.Fragment>
+                    {context.state.audioPlaybackMenuShouldShow && (
+                        <AudioPlaybackMenuComponent />
+                    )}
+                    </React.Fragment>
                 )}
                 </AudioContextConsumer>
+
                 </div>
                 );
             }

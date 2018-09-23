@@ -1,0 +1,16 @@
+article {
+    div.caption{
+        p {
+            margin-block-start: 0rem;
+            margin-block-end: 0.5rem;
+            font-size: $base-font-size/$font-size-multiplier;
+            color: lighten($black, 20%);
+
+            &:first-child:first-letter{
+                padding: 0px;
+                font-size: $base-font-size/$font-size-multiplier;
+                float:none;
+            }
+        }
+    }
+}

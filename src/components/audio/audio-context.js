@@ -18,7 +18,8 @@ class AudioContextProvider extends React.Component {
         this.state = {
             testText: "moose",
             buttonClickedCount: 0,
-            audioPlaybackMenuShouldShow: false
+            audioPlaybackMenuShouldShow: false,
+            stories: []
         }
     }
 
@@ -48,15 +49,24 @@ class AudioContextProvider extends React.Component {
         this.demandStopAudioPlayback();
     }
 
+    overwriteStoryMetadata(stories){
+        this.setState({
+            stories
+        });
+        return true;
+    }
+
     render () {
         return (
             <AudioContext.Provider value={{
                 state: this.state,
+                setState: this.setState.bind(this),
                 logButtonClicked: this.logButtonClicked.bind(this),
                 requestAudioPlaybackMenu: this.requestAudioPlaybackMenu.bind(this),
                 requestCloseAudioPlaybackMenu: this.requestCloseAudioPlaybackMenu.bind(this),
                 requestStopAudioPlayback: this.requestStopAudioPlayback.bind(this),
-                demandStopAudioPlayback: this.demandStopAudioPlayback.bind(this)
+                demandStopAudioPlayback: this.demandStopAudioPlayback.bind(this),
+                overwriteStoryMetadata: this.overwriteStoryMetadata.bind(this)
             }}>
                 {this.props.children}
             </AudioContext.Provider>

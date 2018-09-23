@@ -104,15 +104,17 @@ export default class FullBanner extends React.Component {
             
             <AudioContextConsumer>
                 {(context) => (
-                    <button
-                    className={'primary'}
-                    onClick={context.logButtonClicked}>
-                        <FontAwesomeIcon icon={faHeadphones} 
-                        style={{
-                            marginRight: '0.5rem'
-                        }}/> 
-                        Start Listening
-                    </button>
+                    <React.Fragment>
+                        <button
+                        className={'primary'}
+                        onClick={context.requestAudioPlaybackMenu}>
+                            <FontAwesomeIcon icon={faHeadphones} 
+                            style={{
+                                marginRight: '0.5rem'
+                            }}/> 
+                            Start Listening
+                        </button>
+                    </React.Fragment>
                 )}
             </AudioContextConsumer>
             <button

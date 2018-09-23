@@ -2,7 +2,11 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Headroom from 'react-headroom'
 
+// Context Consumers
 import {AudioContextConsumer} from './audio/audio-context'
+
+// Custom Components
+import AudioControlsComponent from './audio/audio-controls'
 
 class Header extends React.Component {
   
@@ -16,6 +20,7 @@ class Header extends React.Component {
         <div
         className={'head-contain'}
         >
+        <AudioControlsComponent />
         <div className="site-title">
         <Link to="/">Beyond the Ballot</Link>
         </div>
