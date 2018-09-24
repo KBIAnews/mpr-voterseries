@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 
 import {debounce} from 'lodash';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeadphones,faNewspaper } from '@fortawesome/free-solid-svg-icons';
+import { /*faHeadphones,*/faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
 // Context Consumers
 import {AudioContextConsumer} from './audio/audio-context'
@@ -63,6 +63,10 @@ export default class FullBanner extends React.Component {
             scrollFactor: (window.scrollY/window.innerHeight)
         });
     }
+
+    scrollDown(){
+        window.scrollBy(0, window.innerHeight);
+    }
     
     render(){
         return (
@@ -105,7 +109,7 @@ export default class FullBanner extends React.Component {
             <AudioContextConsumer>
                 {(context) => (
                     <React.Fragment>
-                        <button
+                        {/* <button
                         className={'primary'}
                         onClick={context.requestAudioPlaybackMenu}>
                             <FontAwesomeIcon icon={faHeadphones} 
@@ -113,12 +117,13 @@ export default class FullBanner extends React.Component {
                                 marginRight: '0.5rem'
                             }}/> 
                             Start Listening
-                        </button>
+                        </button> */}
                     </React.Fragment>
                 )}
             </AudioContextConsumer>
             <button
                     className={'primary'}
+                    onClick={this.scrollDown}
                     >
                         <FontAwesomeIcon icon={faNewspaper} 
                         style={{
