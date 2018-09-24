@@ -65,3 +65,5 @@ Second Amendment rights and limiting abortions are key issues for her, but when 
 “I honestly don't know who Josh Hawley is,” Burnett said. 
 
 Burnett isn’t following this vitriolic, high-stakes campaign. She’s not alone in that regard. But Burnett is exploring the issues that are important to her, and she has some time to figure it out. 
+
+_Aviva Okeson-Haberman is a senior journalism student at the University of Missouri-Columbia. Follow her on Twitter: [@avivaokeson](https://twitter.com/avivaokeson)_

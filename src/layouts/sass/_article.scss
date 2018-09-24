@@ -21,6 +21,11 @@ article{
         }
     }
 
+    p.disclosure{
+        font-size: $body-font-size/$font-size-multiplier;
+        color: lighten($black, 20%);
+    }
+
     p{
         max-width: 750px;
 
