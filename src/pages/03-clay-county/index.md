@@ -21,7 +21,7 @@ McAdams is the type of Clay County voter that candidates in every party are look
 
 Missouri’s fifth-largest county has grown from 184,000 people in the 2000 Census to an estimated population of 242,874 in 2017. Both parties have been competitive, though Republicans mostly have held state legislative seats. But there are signs that may be shifting.
 
-In 2016, Donald Trump won here by fewer than 11 percentage points; he took the rest of the state by 19 percentage points.But the margins in the 2016 races for governor and U.S. Senate in Clay County were far closer. Voters preferred Democrat Jason Kander over GOP incumbent U.S. Sen. Roy Blunt, and Republican Eric Greitens narrowly edged Democrat Chris Koster. And in June, a state Senate seat that had been held by Republicans for 12 years flipped during a special election when then-state Rep. Lauren Arthur defeated Rep. Kevin Corlew by almost 20 points.
+In 2016, Donald Trump won here by fewer than 11 percentage points; he took the rest of the state by 19 percentage points. But the margins in the 2016 races for governor and U.S. Senate in Clay County were far closer. Voters preferred Democrat Jason Kander over GOP incumbent U.S. Sen. Roy Blunt, and Republican Eric Greitens narrowly edged Democrat Chris Koster. And in June, a state Senate seat that had been held by Republicans for 12 years flipped during a special election when then-state Rep. Lauren Arthur defeated Rep. Kevin Corlew by almost 20 points.
 
 Diane Kruse of Gladstone has cast ballots for both parties in recent years.
 
@@ -49,4 +49,4 @@ But Dennis Rone, also from North Kansas City, said the chance to voice objection
 
 If these Clay County voters are any indication, candidates in both parties will have to work to earn their votes and show they match their values of their would-be constituents.
 
-_Samuel King is the Missouri government and politics reporter for KCUR. Email him at p[samuel@kcur.org](mailto:samuel@kcur.org) and follow him on Twitter: [@SamuelKingNews](https://twitter.com/SamuelKingNews?lang=en)_
+_Samuel King is the Missouri government and politics reporter for KCUR. Email him at [samuel@kcur.org](mailto:samuel@kcur.org) and follow him on Twitter: [@SamuelKingNews](https://twitter.com/SamuelKingNews?lang=en)_

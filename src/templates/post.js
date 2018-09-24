@@ -11,7 +11,7 @@ export default function Template({data}){
   return (
     <article>
     <Helmet 
-    title={`${post.frontmatter.title} - Beyond the Banner`}
+    title={`${post.frontmatter.title} - Beyond the Ballot`}
     />
     <header>
     <h1>{post.frontmatter.title}</h1>

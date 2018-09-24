@@ -54,7 +54,7 @@ Mobilizing black voters around the Bell-McCulloch primary presented less a chall
 
 Hayward said a lack of enthusiasm could be the biggest hurdle to getting people of color to vote in the midterms.
 
-With Bell, “there was both things. There was anger (stemming from Michael Brown’s death) and there was enthusiasm about an alternative candidate. With the Senate election, there’s probably a lot of anger on the left about Trump and among many millennials and people of color.” she said. “The enthusiasm may not be there. It would have to be a sense of urgency. A sense that this really an emergency.”
+With Bell, “there was both things. There was anger (stemming from Michael Brown’s death) and there was enthusiasm about an alternative candidate. With the Senate election, there’s probably a lot of anger on the left about Trump and among many millennials and people of color,” she said. “The enthusiasm may not be there. It would have to be a sense of urgency. A sense that this really an emergency.”
 
 In Missouri, a state that largely supported Trump in 2016, Hayward said the same strategies that got St. Louis residents to vote in the primaries on local issues may not draw them out again for national races seemingly removed from high-stakes local issues.
 
@@ -66,6 +66,6 @@ May has spoken out against Right to Work and supported an elected school board f
 
 A [Washington Post analysis](https://www.washingtonpost.com/graphics/2018/politics/governors-redistricting/?utm_term=.cfbc5b09f12d) reports that Missouri is among dozens of other states whose Statehouse elections could have major influences on redistricting in coming years. New district maps ultimately affect Congressional representation.
 
-May told St. Louis Public radio reporters Jason Rosenbaum and Jo Mannies in August concerning her primary win, “I feel like it’s 2018 and paradigm is changing--and I’m hopeful for the future.”    
+May told St. Louis Public radio reporters Jason Rosenbaum and Jo Mannies in August concerning her primary win, “I feel like it’s 2018 and paradigm is changing - and I’m hopeful for the future.”    
 
 _Ashley Lisenby is a reporter based in St. Louis and part of the public radio collaborative [Sharing America](http://sharingamerica.news), covering the intersection of race, identity and culture. This new initiative, funded by the Corporation for Public Broadcasting, includes reporters in Hartford, St. Louis, Kansas City and Portland, Oregon. Follow her on Twitter: [@aadlisenby](https://twitter.com/aadlisenby)._
