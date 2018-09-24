@@ -34,8 +34,8 @@ export default class Layout extends React.Component {
         <Helmet
         title={data.site.siteMetadata.title}
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: 'description', content: 'Find out what Missouri voters are really looking for in the November midterm election.' },
+          { name: 'keywords', content: 'elections' },
         ]}
         />
         <Header siteTitle={data.site.siteMetadata.title} />

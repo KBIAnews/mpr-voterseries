@@ -17,6 +17,15 @@ Story is a first-time voter who spends most of her free time — when she’s no
 
 She’s not the only high school senior looking forward to voting this November. 
 
+![Battle High School junior DC Darks](./dc.jpg)
+<div class="caption">
+
+Battle High School junior DC Darks, 17, isn’t old enough to vote in this year’s election. He says he doesn’t follow politics closely. “I just don’t really care about it. If I do vote, I do vote. If I don’t, oh well,” says Darks, who spends most of his time dancing and preparing for college.
+
+Credit: Aviva Okeson-Haberman / KBIA
+
+</div>
+
 Jefferson City High School senior Tiana Vaughan closely follows politics. Right now, she’s paying a lot of attention to Robert Mueller’s federal investigation of Russian government interference in the 2016 election. Vaughan wants to see Democrat Sen. Claire McCaskill get re-elected. 
 
 “I've gone with my grandma to vote before, but I think it's gonna be a little bit different voting for myself,” Vaughan said. 
