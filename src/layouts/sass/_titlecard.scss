@@ -48,6 +48,11 @@ div.full-banner{
                 font-size: 1.6rem;
                 color: $black;
             }
+
+            p.explainer {
+                color: lighten($black, 30%);
+                font-size: $base-font-size/$font-size-multiplier;
+            }
         }
 
 

@@ -35,7 +35,8 @@ export default class Layout extends React.Component {
         title={data.site.siteMetadata.title}
         meta={[
           { name: 'description', content: 'Find out what Missouri voters are really looking for in the November midterm election.' },
-          { name: 'keywords', content: 'elections' },
+          { name: 'og-image', content: 'https://s3.amazonaws.com/media.kbia.org/2018/beyond-ballot-media/patternonly.png'},
+          { name: 'keywords', content: 'elections' }
         ]}
         />
         <Header siteTitle={data.site.siteMetadata.title} />

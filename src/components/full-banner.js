@@ -134,6 +134,10 @@ export default class FullBanner extends React.Component {
 
             </p>
 
+            <p className={"explainer"}>
+            'Beyond the Ballot' is a collaborative reporting project from KBIA, KCUR, KSMU and St.&nbsp;Louis Public Radio about the motivations and desires of Missouri voters in November's midterm elections.
+            </p>
+
 
             </div>
             </div>
