@@ -15,7 +15,7 @@ After the August primaries, it’s clear many people — young, black and progre
 
 “A lot of what St. Louis Action Council is trying to do is create a space where the issues that affect black people and black millennials most, this is a space where those ideas can be nurtured,” Brown said. 
 
-![Wesley Bell celebrates his election victory.](./bv.jpg)
+![Wesley Bell celebrates his election victory.](bv_.jpg)
 <div class="caption">
 
 Wesley Bell, who defeated the longtime St. Louis County Prosecutor Bob McCulloch, addresses an exuberant crowd at La Mexicana in St. Ann on Aug. 7, 2018.

@@ -15,6 +15,13 @@ There’s just as varied an amount of political opinions ahead of the Nov. 6 mid
 
 “It’s the issues at hand. It’s the candidate themselves. I’ve never been a big Republican, Democrat, none of that matters to me,” McAdams said. And, fitting for someone who works at a brewery, he said relatability is also important. 
 
+![Dustin McAdams poses behind a bar](dustin_.jpg)
+<div class="caption">
+
+Dustin McAdams works behind the bar at Rock and Run Brewery and Pub in Liberty. He’s seeking authenticity and relatability in candidates. 
+
+</div>
+
 “I want that type of person to be the one I would live next door to, that would be my neighbor, I could go and have a beer with on Friday night,” he said. “(And) keep their promises, man. Keep their promises and come through and do right by the American people.”
 
 McAdams is the type of Clay County voter that candidates in every party are looking to attract, voters that are interested in a wide variety of issues but also want candidates with integrity and a commitment to working across the aisle.
@@ -30,6 +37,13 @@ Diane Kruse of Gladstone has cast ballots for both parties in recent years.
 But to gain her vote this year, she said candidates have to show signs of bipartisanship.
 
 “I think they need to listen to people, they need to listen to what the people are saying, what the average person really deals with: having to work a couple of jobs just to get by, having to face racism, having to face difficulty in getting employment and getting good wages,” Kruse said.
+
+![Sherie Stanich stands outside her store](sherie.jpg)
+<div class="caption">
+
+Sherie Stanich stands outside her business in North Kansas City. Unlike some voters in Clay County, she still supports President Donald Trump.
+
+</div>
 
 For Daryl Mace, who owns a shoe repair shop in Liberty, listening means following through on promises.
 

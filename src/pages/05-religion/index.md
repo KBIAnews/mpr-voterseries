@@ -23,9 +23,18 @@ Schmalzbauer is a Methodist, and Faith Voices is rallying behind [Proposition B]
 
 She said many Bible verses urge Christians to serve the poor and downtrodden. When looking at candidates, that’s a major factor for her, she said: “It matters how you treat the vulnerable. Are you kind?” 
 
+![Missouri Faith Voices](mofv.jpg)
+<div class="caption">
+
+Irene and Ken Livingston, Springfield, prepare to make phone calls to potential voters at the First Unitarian Universalist Church in Springfield as part of an effort by Missouri Faith Voters.
+
+Credit: Jennifer Moore / KSMU
+
+</div>
+
 Evangelicals like Georjene Tilton, who lost in the GOP primary for for Missouri’s 137th House seat earlier this year, looks to other things when it comes to the intersection of faith and politics.
 
-“Can I just start by telling you that I’m a Christian:  a nondenominational Christian, evangelical. And so, a strict Bible-believing Christian,” said “And God set up three institutions:  the Church — capital ‘C’ — the family, and government.”
+“Can I just start by telling you that I’m a Christian:  a nondenominational Christian, evangelical. And so, a strict Bible-believing Christian,” said Georjene. “And God set up three institutions:  the Church — capital ‘C’ — the family, and government.”
 
 A major issue for her is the federal government’s debt.
 
