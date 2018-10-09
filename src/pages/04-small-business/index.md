@@ -15,7 +15,14 @@ Less than two miles from the iconic Anheuser-Busch brewery in St. Louis, a start
 
 The modern micro-brewery has grown steadily since it was launched four years ago. Stuart Keating, a co-owner, said financing from a local development agency has been a big help, but he's feeling the pinch from policies in Washington. President Donald Trump’s tariffs on imported metals have raised the price of a beer can by as much as three cents.
 
-![Person making beer](./091818_CH_earthboundbeer_01_03.jpg)
+![Rebecca Schranz brews beer.](./091818_CH_earthboundbeer_01_03.jpg)
+<div class="caption">
+
+Earthbound Beer co-owner Rebecca Schranz brews beer in the micro-brewery's basement.
+
+Credit: Carolina Hidalgo / St. Louis Public Radio
+
+</div>
 
 “We’re the small guys so we’re going to get the price increases passed on to us,” he said. “That is one of the interesting things, if you don’t have any real purchasing power, you’re at the absolute mercy of all price increases.”
 

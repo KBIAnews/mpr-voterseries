@@ -11,7 +11,7 @@ export default function Template({data}){
   return (
     <article>
     <Helmet 
-    title={`${post.frontmatter.title} - Beyond the Banner`}
+    title={`${post.frontmatter.title} - Beyond the Ballot`}
     />
     <header>
     <h1>{post.frontmatter.title}</h1>
@@ -51,6 +51,7 @@ export default function Template({data}){
           </audio>
           </header>
           <section dangerouslySetInnerHTML={{__html:post.html}}/>
+            <p className={'disclosure'}>This story is part of 'Beyond the Ballot,' a collaborative reporting project by KBIA, KCUR, KSMU and St. Louis Public Radio about the motivations and desires of Missouri voters in November's midterm elections.</p>
           </article>
           )
         }
